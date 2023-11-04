@@ -22,23 +22,23 @@ public class Enrrolment {
 				//Base de datos (correlativa algoritmos aljebra e ingles)
 				
 				Subject algoritmos = new Subject(1,"Algoritmos",correlatives);
-				Subject aljebra = new Subject(1,"Aljebra",correlatives);
-				Subject ingles = new Subject(1,"Ingles",correlatives);
+				Subject aljebra = new Subject(2,"Aljebra",correlatives);
+				Subject ingles = new Subject(3,"Ingles",correlatives);
 				
 				correlatives.add(aljebra);
 				correlatives.add(algoritmos);
-				Subject ingsoft = new Subject(1,"Ingenieria del Software",correlatives);
+				Subject ingsoft = new Subject(4,"Ingenieria del Software",correlatives);
 				
 				correlatives = new ArrayList<>();
 				correlatives.add(ingles);
-				Subject aspectos = new Subject(1,"Aspectos Legales de la Profesion",correlatives);
+				Subject aspectos = new Subject(5,"Aspectos Legales de la Profesion",correlatives);
 				
 				correlatives = new ArrayList<>();
 				correlatives.add(algoritmos);
 				correlatives.add(aljebra);
 				correlatives.add(ingles);
 				
-				Subject based = new Subject(1,"Base de Datos",correlatives);
+				Subject based = new Subject(6,"Base de Datos",correlatives);
 				
 				System.out.println("Correlativas de Base de datos:");
 				List<Subject> correlativas_bd = based.getCorrelatives();
@@ -61,8 +61,13 @@ public class Enrrolment {
 	}
 	
 	public void students() {
-		
-		
+		List<Subject> materias_aprobadass = new ArrayList<>();
+		Subject  materia1 = Subject(1,"Algoritmos",materias_aprobadas);
+		Subject  materia2 = Subject(2,"Aljebra",materias_aprobadas);
+		materias_aprobadas.add(materia1);
+		Student florencia = new Student("40236403","Florencia","Riposo",materias_aprobadas);
+		 
+
 		
 	}
 	
